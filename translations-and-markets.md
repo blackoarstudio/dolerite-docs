@@ -16,11 +16,31 @@ product names, descriptions, page copy, menu items — is translated separately,
 
 ## Adding a language
 
-1. **Settings → Languages → Add language**.
-2. Pick one of the six above and publish it.
+It takes three steps, and the first two on their own change nothing on your
+storefront. This catches almost everybody.
 
-The language picker appears in the footer as soon as your store has more than one
-published language. You do not have to enable it anywhere.
+1. **Settings → Languages → Add language**. Pick one of the six above.
+2. **Publish it** — from the `…` menu next to the language. An unpublished language
+   does not exist as far as your storefront is concerned. Shopify will warn you that
+   you have no translations yet; publish anyway. That warning is about *your* content
+   (products, pages), and the theme's own text is already translated.
+3. **Settings → Markets → your market → Domains and languages** — add the language
+   there too. **This is the step people miss.** Until a language is switched on for
+   the market a visitor is browsing, the storefront stays in your default language
+   and no picker appears.
+
+The language picker appears in the footer once all three are done, and only then.
+If you have finished step 2 and see no picker, step 3 is why.
+
+### About the URL
+
+Step 3 asks you to set up a subfolder, and it offers to give **every** language one —
+including your main language, which would move your whole store from `example.com/`
+to `example.com/en-us/`. That is a real change to every URL you have.
+
+Unless you want that, remove the suffix from your primary language in that dialog.
+The main language then stays at the root and only the added language gets a folder,
+which is what most stores want.
 
 To translate your own product and page content, use Shopify's free **Translate &
 Adapt** app, or any translation app from the App Store.
