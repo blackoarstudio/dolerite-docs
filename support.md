@@ -6,7 +6,7 @@ description: "How to reach us, what to include, response times, and what support
 
 ## Contact us
 
-**[Open a support request](CONTACT_FORM_URL)**
+**[Open a support request](https://tally.so/r/kdXl8J)**
 
 The form is the fastest route and the only one we monitor. It is public — you do not
 need an account to use it.
