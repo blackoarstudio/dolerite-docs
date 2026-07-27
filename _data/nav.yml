@@ -1,0 +1,22 @@
+# The sidebar, in order. Adding a page means adding it here and creating the
+# matching Markdown file with front matter.
+- title: Overview
+  url: /
+- title: Getting started
+  url: /getting-started/
+- title: Theme settings
+  url: /theme-settings/
+- title: Sections
+  url: /sections/
+- title: Product page
+  url: /product-page/
+- title: Navigation and search
+  url: /navigation/
+- title: Tags and metafields
+  url: /tags-and-metafields/
+- title: Translations and markets
+  url: /translations-and-markets/
+- title: Troubleshooting
+  url: /troubleshooting/
+- title: Support
+  url: /support/

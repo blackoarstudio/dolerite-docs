@@ -1,0 +1,52 @@
+title: Dolerite
+description: Documentation for the Dolerite Shopify theme — setup, sections, settings and support.
+lang: en
+
+# --------------------------------------------------------------------------
+# URLs
+#
+# These two are correct for a GitHub project site served at
+# https://operatorzerox.github.io/dolerite-docs/
+#
+# If you later point a custom domain at this repository (docs.example.com),
+# change them to:
+#   url: "https://docs.example.com"
+#   baseurl: ""
+# and add a CNAME file. Every link on the site runs through the relative_url
+# filter, so those two lines are the only place the domain is written down.
+# --------------------------------------------------------------------------
+url: "https://operatorzerox.github.io"
+baseurl: "/dolerite-docs"
+
+permalink: pretty
+
+# GitHub Pages builds this with Jekyll. jekyll-relative-links is on by default
+# there and rewrites [text](page.md) links to the built URLs, so the same links
+# work both in the repository file view and on the published site.
+plugins:
+  - jekyll-relative-links
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+relative_links:
+  enabled: true
+  collections: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
