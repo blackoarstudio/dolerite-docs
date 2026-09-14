@@ -197,8 +197,10 @@ buttons says so, and a link opens the list of stores with their availability and
 pickup times.
 
 Set this up under **Settings → Locations** and **Settings → Shipping and delivery →
-Local pickup**. Nothing in the theme needs changing — availability is per variant, and
-the theme re-checks it every time the visitor picks a different one.
+Local pickup**. The location needs a street address: without one, Shopify does not offer
+pickup there and the line does not appear. Nothing in the theme needs changing —
+availability is per variant, and the theme re-checks it every time the visitor picks a
+different one.
 
 ## Gift cards
 
