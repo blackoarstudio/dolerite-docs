@@ -75,6 +75,10 @@ It appears only when the selected *variant* is stocked at a location with local 
 enabled. Check **Settings → Locations** and **Settings → Shipping and delivery → Local
 pickup**, and check the variant's inventory at that location.
 
+If you have just switched local pickup on, reload the product page with a hard refresh
+(Ctrl+F5 on Windows, Cmd+Shift+R on a Mac). A page that was open before the change can
+keep showing the old state.
+
 ### There are no filters on my collection page
 
 Filters come from Shopify, not the theme. Install the free **Search & Discovery** app
