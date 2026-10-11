@@ -10,8 +10,8 @@ Dolerite ships translated storefront text in six languages:
 
 English (default) · German · French · Spanish · Italian · Thai
 
-That covers every word the *theme* says — "Add to cart", "Sold out", "Filter",
-"Continue shopping", error messages, form labels, everything. Your own content —
+That covers every word the *theme* says — "Add to cart", "Sold out", "Sort by",
+"View cart", error messages, form labels, everything. Your own content —
 product names, descriptions, page copy, menu items — is translated separately, by you.
 
 ## Adding a language

@@ -7,7 +7,8 @@ description: "Menus, dropdowns and mega menus with promos, mobile navigation, se
 ## Menus
 
 Menus are built in your Shopify admin under **Content → Menus**, not in the theme.
-Dolerite reads two of them, and both are pre-selected:
+Dolerite's header and footer read two of them, and both are pre-selected. Footer
+columns can list further menus of their own — see [Sections](sections.md#footer).
 
 | Menu handle | Where it appears | Setting |
 | --- | --- | --- |
@@ -73,8 +74,9 @@ to configure.
 ## Search
 
 The header's search icon opens a search overlay. As the visitor types, results appear
-below the field: matching products with their photo and price, plus collections,
-pages and articles.
+below the field: suggested searches, matching products with their photo and price, and
+pages and articles. The overlay also opens from the keyboard, with `/` or Ctrl + K
+(Cmd + K on a Mac).
 
 Pressing enter goes to the full search page, which has the same filtering and sorting
 toolbar as a collection page.
@@ -106,9 +108,10 @@ bookmark.
 
 ## Breadcrumbs
 
-A breadcrumb trail appears under the header on collection, product, blog, article,
-page and search pages. It is generated automatically and marked up so search engines
-can read it. There is nothing to configure.
+A breadcrumb trail appears under the header on every page except the home page, the
+cart, the password page, the gift card page, the 404 page and the login and register
+pages. It is generated automatically and marked up so search engines can read it.
+There is nothing to configure.
 
 On a product page the trail shows the collection the visitor arrived through. Reaching
 a product directly — from a search result or a shared link — gives a shorter trail,
@@ -120,6 +123,6 @@ Adding to cart opens a drawer rather than sending the visitor to the cart page. 
 shows line items, quantities, the note field (if enabled in **Theme settings → Cart**),
 the subtotal and a checkout button.
 
-The cart page still exists at `/cart` and is fully built — the footer and the drawer
-both link to it — because some customers prefer a full page, and because the express
+The cart page still exists at `/cart` and is fully built — **View cart** in the drawer
+leads to it — because some customers prefer a full page, and because the express
 checkout buttons belong there.

@@ -27,7 +27,7 @@ when something does not look the way you expect.
 
 ## What is in the box
 
-- **22 sections you can add anywhere**, in five groups: Products, Text, Media,
+- **22 sections you can add**, in five groups: Products, Text, Media,
   Social proof and Store. See [Sections](sections.md).
 - **A product page built from blocks** — 14 block types plus app blocks, in any order.
   See [Product page](product-page.md).

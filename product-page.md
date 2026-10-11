@@ -12,7 +12,10 @@ Open a product in the theme editor and click the **Product** section to see them
 
 ## What ships by default
 
-A new install places nine blocks, in this order:
+A new install places nine blocks, in this order. The Anthracite style adds four
+**Collapsible row** blocks below the buy buttons — replace their example text — and an
+**Image with text** section under the product. In all three styles, **Related
+products** and **Recently viewed** follow below the product.
 
 1. Eyebrow
 2. Title
@@ -50,8 +53,9 @@ Price, compare-at price and unit price. **Show tax and shipping note** adds a li
 stating whether tax is included and linking to your shipping policy — on by default,
 and expected in several markets.
 
-When a product's variants have different prices, the price reads as a range starting
-at the lowest.
+The price shown is the selected variant's, and it changes when the visitor picks
+another one. Product cards in a grid are different: there a product whose variants
+have different prices reads "From" and the lowest.
 
 ### Stock status
 
@@ -60,7 +64,7 @@ the visitor switches variants.
 
 | Setting | Notes |
 | --- | --- |
-| **Call it low stock at or below** | 1–20, default 5. |
+| **Call it low stock at or below** | 1–25, default 5. |
 | **Show how many are left** | On by default. |
 
 A number is only ever printed when Shopify tracks the inventory *and* the product
@@ -117,7 +121,7 @@ as a line item property and appears with the order in your admin.
 | --- | --- |
 | **Only for products tagged** | Default `personalizable`. Only products carrying this tag show the field. Clear the setting to show it on every product. |
 | **Field label** | Also the name the value is filed under in the order. |
-| **Max characters** | 5–100, default 30. |
+| **Max characters** | 10–60 in steps of 5, default 30. |
 | **Placeholder** | Example text inside the empty field. |
 | **Example image marker** | See below. |
 
@@ -132,7 +136,8 @@ without personalization.
 
 ### Quantity
 
-A number field. It follows any quantity rules on the product — minimum, maximum and
+A number field between a minus and a plus button. It follows any quantity rules on
+the product — minimum, maximum and
 increment — and re-reads them on every variant change, because a rule can differ from
 one variant to the next.
 
@@ -185,10 +190,14 @@ The gallery on the left handles whatever media the product has:
 - **Video**, played in place.
 - **3D models**, rotated by dragging. The 3D viewer is only downloaded when a product
   actually has a model.
-- **Look inside**, when the flipbook metafield is set.
 
 There is nothing to configure. Order the media under **Products → [product] →
 Media**; the first item is the one that shows first.
+
+The **Look inside** view — extra pages to leaf through — is not part of the gallery. It
+opens from the **Look inside button** block once the flipbook metafield is set, and
+that block is not placed by default: add it to the Product section. See
+[Tags and metafields](tags-and-metafields.md).
 
 ## Local pickup
 
@@ -204,19 +213,29 @@ different one.
 
 ## Gift cards
 
-When the product is a gift card, the buy buttons block grows a set of recipient
-fields: a checkbox to send it to someone else, then their email address, their name, a
-message and an optional send date.
+When the product is a gift card, the buy buttons block grows a **Send as a gift** line.
+Opened, it offers a checkbox, **Email this gift card to someone else**. Ticked, four
+fields appear: the recipient's email address, and — all three optional — their name, a
+message of up to 200 characters and a send date. Left closed, the card goes to the
+buyer.
 
 These fields only exist for gift card products. Create one under **Products → Add
 product → This is a gift card**.
 
 ## The same blocks in two places
 
-The **Featured product** section uses this identical block stack, so a featured
-product on your home page behaves exactly like the product page. Two blocks are
-product-page only — **Ingredients** and **Look inside** — because they open overlays
-that belong to the product page's gallery.
+The **Featured product** section is built from the same blocks, so variants, price,
+stock and the buy buttons behave on your home page as they do on the product page. It
+is the smaller version, though:
+
+- Two blocks are product-page only — **Ingredients button** and **Look inside button**
+  — because they open overlays that belong to the product page.
+- The image does not zoom, and there is no local pickup line. The title links to the
+  product page, where both are.
+- The **Personalization field** has no **Example image marker**.
+- Three starting values differ: **Show tax and shipping note** and **Show installment
+  options** are off here and on on the product page, and the **Eyebrow** starts as the
+  custom text "Featured" instead of the product type.
 
 ## Quick view
 

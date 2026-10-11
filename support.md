@@ -73,10 +73,10 @@ Bug reports are welcome and taken seriously. What helps most:
 
 ## Theme updates
 
-Updates are published as a new zip. Existing customers get access to every update for
-the theme they bought at no extra cost.
+Updates are released through the Shopify Theme Store. A store that installed the theme
+from there can add every update to its draft themes at no extra cost.
 
-Shopify does not merge settings between uploads, so an update means: upload the new
-version as an unpublished theme, set it up alongside the live one, and publish when it
-matches. [Getting started](getting-started.md#updating-to-a-newer-version-of-dolerite)
+An update arrives as a draft with your theme editor settings copied over, so an update
+means: add it, check it alongside the live theme, and publish when it matches.
+[Getting started](getting-started.md#updating-to-a-newer-version-of-dolerite)
 walks through it.

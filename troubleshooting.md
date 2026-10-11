@@ -12,27 +12,40 @@ If your question is not here, [get in touch](support.md).
 
 ## Content that is not appearing
 
-### My product grid shows grey placeholder cards
+### My product grid shows gray placeholder cards
 
-No collection is selected. Open the section and pick one under **Collection**. The
-placeholders are the theme showing you the layout while the setting is empty.
+The collection the section points at has no products, or no collection is selected.
+Open the section and pick one under **Collection**. The placeholders are the theme
+showing you the layout while there is nothing to show.
 
-### Related products / Recently viewed are empty in the theme editor
+### My home page shows placeholder pictures, a "Product title" or a countdown
 
-That is expected, and both work on the real storefront.
+That is how a style installs, before your own content is in. A **Slideshow** or
+**Editorial split** without images, a **Collection teaser** without collections, a
+**Featured product** without a product and a **Drop** without a collection all draw
+placeholders in the places your content will take. The countdown on the Anthracite home
+page belongs to the **Drop** section's example launch time: set your own under **Launch
+time**, clear it, or remove the section. See
+[Getting started](getting-started.md#what-ships-on-the-home-page).
 
-*Related products* asks Shopify for recommendations, which the editor has no visitor
-context to produce. *Recently viewed* reads a list stored in the visitor's own browser,
-and the editor has not browsed anything.
+### Related products / Recently viewed show nothing
 
-Close the editor, choose **Actions → Preview**, and click through a few products.
+Both sections stay out of the way when they have nothing to show.
+
+*Related products* asks Shopify for recommendations. A product it has none for yet
+shows nothing — and so does one without complementary products set up in **Search &
+Discovery**, when the section is set to *Products that go with it*. *Recently viewed*
+reads a list stored in the visitor's own browser, and it is empty until that browser
+has looked at another product.
+
+Preview the store and click through a few products to see both fill up.
 
 ### My mega menu promo is not showing
 
 Three things must all be true:
 
-1. The menu item has **three levels** below it in **Content → Menus**. A two-level
-   dropdown has no room for a promo.
+1. The menu runs **three levels deep** at that item in **Content → Menus** — the item,
+   its children and their children. A two-level dropdown has no room for a promo.
 2. The block's **Menu item title** matches the top-level menu item's title *exactly* —
    same spelling, same capitalization, no trailing space.
 3. The block has an image or a heading.
@@ -87,10 +100,11 @@ and set them up under **Filters**. Until then the toolbar shows sorting only.
 
 ## Things that look wrong but are not
 
-### The email popup is always open in the theme editor
+### The email popup opens whenever I select it in the theme editor
 
-By design — you could not style it otherwise. Dismissals are only remembered on the
-real storefront. Preview the store to see it behave normally.
+By design — you could not style it otherwise. It closes again when you select another
+section. Its trigger and remembered dismissals only apply on the real storefront;
+preview the store to see it behave normally.
 
 ### A visitor who closed my announcement bar sees it again
 
@@ -122,9 +136,10 @@ dark value here; a light scheme with a deep accent needs a light one.
 
 ### The hairlines and dividers are invisible, or far too strong
 
-They are mixed from **Muted text** and **Background** in each scheme. If they have gone
-wrong, those two colors are too close together, or too far apart. Adjust **Muted text**
-first — it also controls the dimmest labels, so it is usually the one that drifted.
+They are mixed from **Text** and **Background** in each scheme. If they have gone
+wrong, those two colors are too close together, or too far apart. The dimmest labels
+are mixed the same way from **Muted text** and **Background** — if it is the small gray
+labels that are hard to read, **Muted text** is the one to adjust.
 
 ### My headings do not look like the font I picked
 
@@ -147,11 +162,13 @@ screens. If they look soft, the uploaded file is too small. Upload product photo
 
 ## Settings and updates
 
-### I published a new version and my colors are gone
+### I added a new version and my colors are gone
 
-Shopify does not merge settings between theme uploads — each upload is a separate
-theme with its own settings. Set the new one up as an unpublished theme first, with
-the live one still serving visitors, and publish when it matches.
+An update you add from the notification under **Online Store → Themes** arrives as a
+draft with your editor settings copied over. A theme added any other way — installed a
+second time from the Theme Store, or uploaded as a file — is a separate theme that
+starts from its style's own values. Add the update from the notification instead; see
+[Getting started](getting-started.md#updating-to-a-newer-version-of-dolerite).
 
 ### I edited the theme and nothing changed on my store
 
@@ -163,7 +180,8 @@ unpublished theme is the right thing to do — you just have to publish it after
 
 Yes, under **Online Store → Themes → ⋯ → Edit code**. Two things to know:
 
-- Code edits do not carry over to a new version of the theme. Note what you changed.
+- Shopify carries code edits over to a new version only when they do not conflict with
+  the update, and tells you on the theme's card whether it did. Note what you changed.
 - Support covers the theme as shipped. We will always look at a problem and tell you
   what we find, but we cannot debug custom code or third-party app code for you.
 
