@@ -26,7 +26,7 @@ That is how a style installs, before your own content is in. A **Slideshow** or
 placeholders in the places your content will take. The countdown on the Anthracite home
 page belongs to the **Drop** section's example launch time: set your own under **Launch
 time**, clear it, or remove the section. See
-[Getting started](getting-started.md#what-ships-on-the-home-page).
+[Getting started](getting-started.md#2-what-ships-on-the-home-page).
 
 ### Related products / Recently viewed show nothing
 
