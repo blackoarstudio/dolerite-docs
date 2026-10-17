@@ -72,8 +72,19 @@ A row of collections, each as a card with its image and name.
 | **Collections to show** | 2–12. |
 | **Columns on desktop** | 2–4. |
 | **Show the number of products** | On by default. |
+| **Image fit** | **Fill the tile** (default) or **Show the whole image**. See below. |
 | **Load the first image immediately** | Off by default. Turn it on only when this section is the topmost one on the page. |
 | **Link label**, **Link** | A button beside the heading, e.g. to your list of all collections. With **Link** empty it goes there on its own. The button needs an eyebrow or a heading to sit beside; with both empty it is not shown. |
+
+**Image fit** decides what happens when a collection image and its tile have different
+shapes. **Fill the tile** gives every tile the shape of a product card (**Theme settings
+→ Product cards → Image shape**) and crops the image to it: a wide 16:9 photo in a
+square tile loses nearly half its width. **Show the whole image** never crops. All tiles
+in the row share one shape, halfway between the narrowest and the widest collection
+image, and every image is fitted inside its tile on the card's background. Photos shot
+in one format therefore fill their tiles exactly; in a mixed row each sits inside its
+tile with a margin above and below or at the sides. Collections without an image keep
+the product card shape. The list of all collections has the same setting.
 
 ### Related products
 
@@ -249,13 +260,17 @@ One video, either hosted by Shopify or embedded from YouTube or Vimeo.
 | **Video** | A video uploaded to your Shopify files. Preferred — it plays without contacting another company's servers. |
 | **Or a YouTube / Vimeo link** | Used when **Video** is empty. |
 | **Cover image** | For a YouTube or Vimeo video: what visitors see until they press play. An uploaded video shows its own first frame instead. |
-| **Play muted on loop, without controls** | Off by default. For an uploaded video only: turns it into a silent background loop, paused for visitors who prefer reduced motion. With a YouTube or Vimeo link the switch does nothing. |
+| **Play muted on loop, without controls** | Off by default. For an uploaded video only: turns it into a silent background loop with a round pause button in the bottom corner. Visitors who prefer reduced motion see it paused and start it with the same button. With a YouTube or Vimeo link the switch does nothing. |
 | **Shape** | 16:9, 2.4:1 (cinematic), 1:1 or 9:16 (vertical). |
 | **Full page width** | Off by default. |
 
 An external video is not embedded until the visitor presses play. Until then the
 section is just your cover image, which is why a good cover image matters here: it is
 what most visitors will actually see.
+
+The background loop's pause button is not optional, for the same reason as the
+slideshow's: anything that moves on its own for more than five seconds needs a way to
+stop it to meet accessibility requirements.
 
 ---
 
@@ -430,8 +445,8 @@ settings. Most carry top and bottom padding; the ones with more are listed here.
 | Page | Section | Settings beyond padding |
 | --- | --- | --- |
 | Product | **Product** | Built from blocks — see [Product page](product-page.md). |
-| Collection | **Collection** | Show the collection image · Show the collection description · Columns (desktop) · Products per page |
-| List of collections | **Collections** | Heading · Columns (desktop) · Collections per page · Show product count |
+| Collection | **Collection** | Show the collection image · Image fit · Show the collection description · Columns (desktop) · Products per page |
+| List of collections | **Collections** | Heading · Columns (desktop) · Collections per page · Show product count · Image fit |
 | Search | **Search** | Results per page · Columns (desktop) |
 | Blog | **Blog** | Columns (desktop) · Posts per page · Show tag filter · and, for the article card: show featured image, image shape, excerpt, date, author |
 | Article | **Article** | Show featured image · author · tags · previous and next post · Comments per page |
@@ -440,6 +455,19 @@ settings. Most carry top and bottom padding; the ones with more are listed here.
 | 404 | **404** | — |
 | Password | **Password** | Logo · Logo width · Heading · Show email signup · Show store owner link |
 | Customer pages | **Login**, **Register**, **Account**, **Addresses**, **Order**, **Reset password**, **Activate account** | Heading and subheading on most; the order page can show or hide product images |
+
+**Image fit** on the collection page is about the collection image at the top. **Fill
+the banner** (the default) shows it as a wide strip, 16:5 on a desktop and 16:9 on a
+phone, and crops what does not fit. **Show the whole image** keeps the image's own
+shape and never crops; only its height is limited, to 60 % of the screen, so a tall
+image is shown smaller rather than taller than the window. On screens wider than
+900 px the image then stands to the right of the collection title and description,
+taking at most a little more than half the width; on smaller screens it sits above
+them. On the list of collections,
+**Image fit** works as in the [Collection teaser](#collection-teaser).
+
+All three Dolerite styles install with **Show the whole image** on the collection page,
+the list of collections and the collection teaser.
 
 You *can* add ordinary sections above and below these on any template — a **Trust
 badges** row under the cart, an **FAQ** under the product, a **Newsletter** at the
